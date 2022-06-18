@@ -1,0 +1,17 @@
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.search-wrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 25px;
+  background-color: bisque;
+  padding: 10px;
+}

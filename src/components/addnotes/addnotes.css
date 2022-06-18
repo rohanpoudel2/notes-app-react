@@ -1,0 +1,10 @@
+.addnotes .notes {
+  background-color: #c9daff;
+}
+
+.addnotes textarea {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+}

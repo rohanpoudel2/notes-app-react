@@ -1,0 +1,57 @@
+.notes {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFD872;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+.editnote {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.notes .editnote {
+  display: none;
+}
+
+.edit-notes p {
+  display: none;
+}
+
+.edit-notes .editnote {
+  display: block;
+}
+
+.notes-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-footer-left {
+  display: flex;
+}
+
+.notes-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-btn:first-child {
+  margin-right: 0.4rem;
+}
+
+.icon {
+  font-size: 14px;
+}
