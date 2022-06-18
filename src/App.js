@@ -7,7 +7,16 @@ import { nanoid } from 'nanoid';
 
 const App = () => {
 
-  const [notesdata, setnotesdata] = useState(JSON.parse(localStorage.getItem('notes-data')));
+  let initialvalue;
+
+  if (JSON.parse(localStorage.getItem('notes-data')) == null) {
+    initialvalue = [];
+  }
+  else {
+    initialvalue = JSON.parse(localStorage.getItem('notes-data'));
+  }
+
+  const [notesdata, setnotesdata] = useState(initialvalue);
 
   useEffect(() => {
     localStorage.setItem('notes-data', JSON.stringify(notesdata));
@@ -42,7 +51,7 @@ const App = () => {
   return (
     <div className="wrapper">
       <Search search={searchnotes} />
-      <Noteslist notesdata={notesdata.filter((note) => note.text.includes(search))} adddata={adddata} deletedata={handledelete} />
+      <Noteslist notesdata={notesdata.filter((e) => e.text.includes(search))} adddata={adddata} deletedata={handledelete} />
     </div>
   )
 }
